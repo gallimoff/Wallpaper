@@ -17,8 +17,8 @@ public class Main {
         double wallpaperSheet = Math.floor(wallpaperLength /(roomHeight + wallpaperStoke));
         double perimeter = (roomLength * 2) + (roomWidth * 2);
         double leaf = Math.ceil(perimeter / wallpaperWidth);
-        double rollOfWallpaper = (leaf / wallpaperSheet);
-        System.out.println ("Will need " + Math.ceil(rollOfWallpaper) + " wallpaper rolls.");
+        int rollOfWallpaper =(int)(leaf / wallpaperSheet);
+        System.out.println ("Will need " + rollOfWallpaper + " wallpaper rolls.");
         in.close();
     }
 }
